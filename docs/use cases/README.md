@@ -84,35 +84,41 @@
 @enduml
 
 # Сценарії 
+### 3.1 Супроводження даних
+    
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+    
 @startuml
 
-left header
-    <font color=000 size=16><b>ID:</b> UC-1
-    <font color=000 size=16><b>Назва:</b> Авторизуватися у системі
-    <font color=000 size=16><b>Учасники:</b> Користувач, Система
-    <font color=000 size=16><b>Передумови:</b> Зареєстрований користувач
-    <font color=000 size=16><b>Результат:</b> Доступ до системи
-    <font color=000 size=16><b>Виключні ситуації:</b>
-    <font color=000 size=16>EX-1: Не вірний логін/пароль
-    
-    <font color=000 size=16><b>Основний сценарій:</b>
-end header
+    left header
+        <font color=000 size=16><b>ID:</b> UC-1
+        <font color=000 size=16><b>Назва:</b> Cупроводження даних
+        <font color=000 size=16><b>Учасники:</b> Система
+        <font color=000 size=16><b>Передумови:</b> Данні
+        <font color=000 size=16><b>Результат:</b> Супроводженні данні
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+    end header
 
-|Користувач|
-    start
-    : Натискає на кнопку "Login";
-|Система|
-    : Пропонує форму "Login";
-|Користувач|
-    : Заповнює поля: "Username", "Password";
-    : Відсилає заповнену форму;
-|Система|
-    : Перевіряє введені дані;
-    note right #ffaaaa
-    <b> Можливо
-    <b> EX-1
-    end note
-    : Надає доступ до сайту;
-|Користувач|
-    stop;
+    |Користувач|
+        start
+        : Запрос;
+    |Система|
+        : Аналіз;
+        : Проектування;
+        : Реалізація;
+    |Користувач|
+        : Впровадження;
+    |Система|
+        : Супроводження та визначення вимог;
+    |Користувач|
+        stop;
 @enduml
+    
+</center>
