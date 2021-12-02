@@ -22,4 +22,6 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f https://github.com/horidor/open-data-management-system.git main:gh-pages
 
-cd -
+cd ..
+cd ..
+cd ..
