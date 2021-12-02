@@ -122,3 +122,48 @@
 @enduml
     
 </center>
+
+### 3.2 Реєстрація користувача
+    
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+ 
+@startuml
+
+    left header
+        <font color=000 size=16><b>ID:</b> UC-2
+        <font color=000 size=16><b>Назва:</b> Реєструватися у системі
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Відсутні
+        <font color=000 size=16><b>Результат:</b> Доступ до системи
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16>EX-2: Вже зареєстрований користувач за введеними даними
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+    end header
+
+    |Користувач|
+        start
+        : Натискає на кнопку "Sign up";
+    |Система|
+        : Пропонує форму "Sign up";
+    |Користувач|
+        : Заповнює поля:\n"Email", "Username", "Password";
+        : Відсилає заповнену форму;
+    |Система|
+        : Перевіряє введені дані;
+        note right #ffaaaa
+        <b> Можливо
+        <b> EX-2
+        end note
+        : Реєструє користувача;
+        : Здійснює перехід\n на сторінку авторизації ;
+    |Користувач|
+        stop;
+@enduml
+    
+</center>
