@@ -178,7 +178,7 @@
 @startuml
 
     left header
-        <font color=000 size=16><b>ID:</b> UC-2
+        <font color=000 size=16><b>ID:</b> UC_1.2
         <font color=000 size=16><b>Назва:</b> Реєструватися у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Відсутні
